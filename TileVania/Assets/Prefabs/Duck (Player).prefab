@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7856912336940783910}
   m_Layer: 8
   m_Name: Duck (Player)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,7 +37,7 @@ Transform:
   m_Children:
   - {fileID: 6756531530763801345}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &4604650980755286
 Animator:
@@ -99,7 +99,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 554570119
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: -24315413, guid: bf7e50bfd2a17634487771b7b0ff0de6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 7
-  jumpSeed: 22
+  jumpSeed: 24
   climbSpeed: 5
   deathKick: {x: -1, y: 18}
   bullet: {fileID: 200001673401569411, guid: fd892d21183a3034fba185688ede987b, type: 3}

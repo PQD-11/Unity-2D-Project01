@@ -31,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
         gravityScaleDefault = myRigibody.gravityScale;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (!isAlive) {return;}
@@ -93,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
             isAlive = false;
             myAnimator.SetTrigger("Dying");
             myRigibody.velocity = deathKick;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            FindObjectOfType<GameSession>().ProcessPlayerDeath();
         }
     }
 }
